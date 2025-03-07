@@ -34,7 +34,7 @@ The following tools and technologies are used in this project:
 ## Setup Instructions
 
 ### Prerequisites
-1. **Java** (JDK 23 or higher) installed on your system.
+1. **Java** (JDK 19 or higher) installed on your system.
 2. **Maven** installed on your system.
 3. **IDE** (**IntelliJ IDEA**) to edit and run the code.
 
