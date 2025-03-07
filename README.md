@@ -106,9 +106,9 @@ This class sets up and tears down the browser for each test scenario:
 - `@Before`: Opens the browser before each scenario.
 - `@After`: Closes the browser after each scenario.
 
-### 2. **Step Definitions (e.g., TC01_signUpSteps.java)**
+### 2. **Step Definitions (e.g., D01_Registration.java)**
 
-Each class in the `stepDefs` package defines the steps for a specific test scenario. For example, in `TC01_signUpSteps.java`, the steps to fill the sign-up form, click the button, and validate the success message are implemented.
+Each class in the `stepDefs` package defines the steps for a specific test scenario. For example, in `D01_Registration.java`, the steps to fill the sign-up form, click the button, and validate the success message are implemented.
 
 ### 3. **TestRunner.java**
 
