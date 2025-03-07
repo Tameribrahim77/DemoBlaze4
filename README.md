@@ -30,7 +30,6 @@ The following tools and technologies are used in this project:
 - **Cucumber**: For BDD-style testing using `.feature` files.
 - **TestNG**: Testing framework used to run the Cucumber tests.
 - **Maven**: Build automation tool to manage dependencies and test execution.
-- **ExtentReports**: For generating detailed test execution reports.
 
 ## Setup Instructions
 
@@ -62,9 +61,9 @@ Make sure you have the appropriate WebDriver for the browser you wish to run tes
    ```bash
    mvn test
    ```
-2. To run specific scenarios, use Cucumber tags. For example, to run tests tagged with `@Smoke_Testing`:
+2. To run specific scenarios, use Cucumber tags. For example, to run tests tagged with `@Test`:
    ```bash
-   mvn test -Dcucumber.options="--tags @Smoke_Testing"
+   mvn test -Dcucumber.options="--tags @Test"
 
    ```
 3. Once tests are completed, view the test execution report located at:
@@ -83,7 +82,7 @@ Make sure you have the appropriate WebDriver for the browser you wish to run tes
 ### 2. Verify User Login
 
 - Click on the "Login" button and fill in valid credentials.
-- Ensure that the "Logout" button appears, indicating a successful login.
+- Ensure that the "Logout" button indicates a successful login.
 
 ### 3. Verify Product Purchase
 
@@ -121,4 +120,3 @@ The `pom.xml` file contains project dependencies, including:
 - Selenium WebDriver
 - Cucumber
 - TestNG
-- ExtentReports for reporting
