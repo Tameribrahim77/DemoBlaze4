@@ -20,7 +20,7 @@ D02_Login {
 
     @And("Enter user Username")
     public void enterUserUsername() {
-        log.userName().sendKeys("Tamerhenou59269");
+        log.userName().sendKeys("Tamer Ibrahim5");
     }
 
     @And("Enter user Password")

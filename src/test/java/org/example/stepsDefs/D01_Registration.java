@@ -23,7 +23,7 @@ public class D01_Registration {
 
     @And("Enter Username")
     public void enterUsername() {
-        reg.userName().sendKeys("Tamerpro9");
+        reg.userName().sendKeys("Tamer Ibrahim6");
     }
 
     @And("Enter Password")
@@ -37,7 +37,7 @@ public class D01_Registration {
     }
 
     @Then("The successful popup appears")
-    public void theSuccessfulPopupAppears() throws InterruptedException {
+    public void theSuccessfulPopupAppears() {
         try {
             WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
             // Wait for the alert to appear

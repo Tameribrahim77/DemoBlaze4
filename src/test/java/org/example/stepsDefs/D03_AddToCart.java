@@ -1,7 +1,6 @@
 package org.example.stepsDefs;
 
 import io.cucumber.java.en.And;
-import io.cucumber.java.en.Given;
 import org.example.pages.P01_Registration;
 import org.example.pages.P02_Login;
 import org.example.pages.P03_AddToCart;
@@ -21,8 +20,9 @@ public class D03_AddToCart {
     P03_AddToCart addToCart = new P03_AddToCart();
     P01_Registration headerMenu = new P01_Registration();
 
-    @Given("When Clicking Login from header")
-    public void whenClickingLoginFromHeader() {
+    @And("When Clicking Login from header")
+    public void whenClickingLoginFromHeader() throws InterruptedException {
+        Thread.sleep(Duration.ofSeconds(5));
         log.header().get(4).click();
     }
 

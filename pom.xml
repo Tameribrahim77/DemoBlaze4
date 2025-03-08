@@ -28,6 +28,16 @@
             <artifactId>cucumber-testng</artifactId>
             <version>7.20.1</version>
         </dependency>
+
+        <!-- https://mvnrepository.com/artifact/io.qameta.allure/allure-maven -->
+        <!-- https://mvnrepository.com/artifact/io.qameta.allure/allure-maven -->
+        <dependency>
+            <groupId>io.qameta.allure</groupId>
+            <artifactId>allure-maven</artifactId>
+            <version>2.12.0</version>
+        </dependency>
+
+
     </dependencies>
     <build>
         <plugins>
@@ -67,14 +77,27 @@
                     </execution>
                 </executions>
             </plugin>
+
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-compiler-plugin</artifactId>
+                <version>3.8.1</version> <!-- Add this version -->
                 <configuration>
-                    <source>21</source>
-                    <target>21</target>
-                    <compilerArgs>--enable-preview</compilerArgs>
+                    <source>19</source>
+                    <target>19</target>
                 </configuration>
+            </plugin>
+            <plugin>
+                <groupId>io.qameta.allure</groupId>
+                <artifactId>allure-maven</artifactId>
+                <version>2.12.0</version> <!-- Update to latest version -->
+                <executions>
+                    <execution>
+                        <goals>
+                            <goal>report</goal>
+                        </goals>
+                    </execution>
+                </executions>
             </plugin>
         </plugins>
     </build>
